@@ -1,2 +1,3 @@
-# MicrosoftAuth
-Authorization into microsoft outlook/Graph via user login, password, clientId, clientSecret. Get microsoft token.
+# MicrosoftAPIAuth
+Authorization into microsoft outlook/Graph via user login, password, clientId, clientSecret.
+Get microsoft token.
