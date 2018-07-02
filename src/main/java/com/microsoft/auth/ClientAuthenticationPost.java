@@ -1,4 +1,4 @@
-package auth;
+package com.microsoft.auth;
 
 import com.nimbusds.oauth2.sdk.SerializeException;
 import com.nimbusds.oauth2.sdk.auth.ClientAuthentication;
@@ -13,12 +13,12 @@ import java.util.HashMap;
 import java.util.Map;
 
 class ClientAuthenticationPost extends ClientAuthentication {
-    protected ClientAuthenticationPost(ClientAuthenticationMethod method, ClientID clientID) {
+    ClientAuthenticationPost(ClientAuthenticationMethod method, ClientID clientID) {
         super(method, clientID);
     }
 
     Map<String, String> toParameters() {
-        Map<String, String> params = new HashMap();
+        Map<String, String> params = new HashMap<>();
         params.put("client_id", this.getClientID().getValue());
         return params;
     }

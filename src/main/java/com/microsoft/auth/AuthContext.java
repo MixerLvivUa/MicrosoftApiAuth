@@ -1,4 +1,4 @@
-package auth;
+package com.microsoft.auth;
 
 import com.microsoft.aad.adal4j.AdalAuthorizationGrant;
 import com.microsoft.aad.adal4j.AuthenticationCallback;
@@ -22,7 +22,7 @@ import java.util.concurrent.Future;
 
 
 public class AuthContext {
-    AuthenticationContext authenticationContext;
+    private AuthenticationContext authenticationContext;
 
     public AuthContext(String authority, boolean validateAuthority, ExecutorService service) throws MalformedURLException {
         authenticationContext = new AuthenticationContext(authority, false, service);
