@@ -9,7 +9,7 @@ import java.util.concurrent.Executors;
 
 public class Tests {
     @Test
-    public void getOneToken() throws MalformedURLException, ExecutionException, InterruptedException {
+    public void getOneToken() throws MalformedURLException {
         String authURL = "https://login.microsoftonline.com/common/oauth2/v2.0/authorize";
         String resource = "https://graph.microsoft.com";
         ExecutorService service = Executors.newFixedThreadPool(1);
